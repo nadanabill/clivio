@@ -69,6 +69,8 @@
   "download_android": "تحميل APK",
   "download_mac": "تحميل macOS",
   "download_ios": "قريبًا",
+  "download_web": "استخدم على الويب",
+  "download_web_desc": "من غير تحميل — استخدمه مباشرة في المتصفح",
   
   "support_title": "محتاج مساعدة؟",
   "support_subtitle": "فريق CLIVIO جاهز يساعدك.",
