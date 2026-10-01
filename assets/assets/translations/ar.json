@@ -7,14 +7,12 @@
   "faq": "المساعدة",
   "start_free_trial": "ابدأ تجربتك",
   "no_credit_card": "من غير ما تدفع أي حاجة",
-  
   "hero_label": "30 يومًا مجانًا",
   "hero_title": "رؤية أوضح.\nتحكم كامل.",
   "hero_subtitle_1": "نظام إدارة عيادات الأسنان لتنظيم المرضى والمواعيد والحسابات والمدفوعات من مكان واحد.",
   "hero_subtitle_2": "",
   "hero_cta_primary": "جرّب CLIVIO مجانًا",
   "hero_cta_secondary": "شاهد النظام",
-  
   "value_title": "كل ما تحتاجه عيادتك. في مكان واحد.",
   "value_subtitle": "نظام متكامل يغطي كافة جوانب عملك اليومي، ليمنحك الوقت للتركيز على رعاية مرضاك.",
   "value_patients": "المرضى",
@@ -22,7 +20,6 @@
   "value_accounts": "الحسابات والمدفوعات",
   "value_activity": "مركز النشاطات",
   "value_users": "المستخدمون والصلاحيات",
-  
   "showcase_patients_title": "إدارة المرضى",
   "showcase_patients_desc": "بيانات المرضى والعمليات المرتبطة بهم في مكان واحد.",
   "showcase_appointments_title": "تنظيم المواعيد",
@@ -31,16 +28,13 @@
   "showcase_accounts_desc": "تابع حسابات المرضى وسجل المدفوعات والمعاملات.",
   "showcase_activity_title": "كل معاملة واضحة.",
   "showcase_activity_desc": "مين دفع؟ دفع كام؟ دفع بإيه؟ ومين سجل العملية؟\nمركز النشاطات بيسجل كل خطوة بوضوح.",
-  
   "video_title": "شوف CLIVIO وهو شغال",
   "video_subtitle": "بدل ما نكتفي بالكلام، شوف النظام بالكامل في جولة عملية.",
   "video_cta": "شاهد الجولة الكاملة",
-  
   "free_trial_title": "جرّب CLIVIO بنفسك",
   "free_trial_subtitle": "شهر كامل مجانًا",
   "free_trial_desc": "جرب النظام في عيادتك قبل ما تدفع أي حاجة.",
   "free_trial_cta": "ابدأ تجربتك المجانية",
-  
   "pricing_title": "كل مميزات CLIVIO. بسعر واحد.",
   "pricing_subtitle": "كل المميزات الحالية. بدون Limits على الاستخدام.",
   "pricing_monthly": "جنيه / شهر",
@@ -51,18 +45,15 @@
   "pricing_feature_4": "حسابات المرضى والمدفوعات",
   "pricing_feature_5": "مركز النشاطات",
   "pricing_feature_6": "المستخدمون والصلاحيات",
-  "pricing_feature_7": "اندرويد / ويندوز / ماك — وآيفون قريبًا",
+  "pricing_feature_7": "أندرويد / آيفون / ويندوز / ويب",
   "pricing_feature_8": "دعم فني متواصل",
-  
   "founding_offer_label": "المستخدمين الأوائل",
   "founding_offer_discount": "خصم 20%",
   "founding_offer_desc": "لأول عيادات هتنضم لينا.",
-  
   "referral_title": "تعرف عيادة أسنان ممكن تستفيد من CLIVIO؟",
   "referral_subtitle": "رشّح CLIVIO لعيادة جديدة واستفد من خصم على اشتراكك.",
   "referral_1": "رشح عيادة واحدة ← خصم 5%",
   "referral_2": "رشح عيادتين أو أكثر ← خصم 10%",
-  
   "download_title": "حمّل CLIVIO",
   "download_subtitle": "استخدم CLIVIO بالطريقة المناسبة لك.",
   "download_windows": "تحميل تطبيق Desktop",
@@ -71,11 +62,9 @@
   "download_ios": "iPhone & iPad",
   "download_web": "استخدم على الويب",
   "download_web_desc": "من غير تحميل — استخدمه مباشرة في المتصفح",
-  
   "support_title": "محتاج مساعدة؟",
   "support_subtitle": "فريق CLIVIO جاهز يساعدك.",
   "contact_whatsapp": "تواصل معنا على WhatsApp",
-  
   "footer_desc": "نظام إدارة عيادات متكامل يوفر لك كل ما تحتاجه لتنظيم عملك اليومي بكفاءة عالية.",
   "footer_product": "المنتج",
   "footer_company": "الشركة",
@@ -83,6 +72,12 @@
   "footer_contact": "اتصل بنا",
   "footer_terms": "الشروط والأحكام",
   "footer_privacy": "سياسة الخصوصية",
-  
-  "copyright": "© 2026 CLIVIO. جميع الحقوق محفوظة."
+  "copyright": "© 2026 CLIVIO. جميع الحقوق محفوظة.",
+  "hero_cta_demo": "اطلب ديمو على واتساب",
+  "hero_trust": "من غير ما تدفع أي حاجة، وبعد التجربة {} جنيه في الشهر بس",
+  "hero_platforms": "بتشتغل على الموبايل والكمبيوتر والويب",
+  "pricing_limited": "لفترة محدودة",
+  "pricing_yearly_line": "أو {} جنيه / سنة (بدلاً من {})",
+  "whatsapp_message": "أهلاً، عايز أعرف أكتر عن CLIVIO وأطلب ديمو",
+  "download_google_play": "حمّل من Google Play"
 }

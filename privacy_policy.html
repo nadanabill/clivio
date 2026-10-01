@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Clivio | سياسة الخصوصية – كليفيو</title>
+  <meta name="description" content="Clivio Privacy Policy – How we collect, use, and protect your data. | سياسة الخصوصية لتطبيق كليفيو لإدارة العيادات." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary-50:  #E0F2F1;
+      --primary-100: #B2DFDB;
+      --primary-200: #80CBC4;
+      --primary-400: #26A69A;
+      --primary-600: #005E53;
+      --primary-700: #004D40;
+      --primary-900: #00201B;
+      --surface:     #ffffff;
+      --bg:          #F8FAFA;
+      --text-main:   #00201B;
+      --text-body:   #2E3131;
+      --text-muted:  #6E7A76;
+      --border:      #ECEEE;
+      --shadow-sm:   0 1px 3px rgba(0,94,83,.08), 0 1px 2px rgba(0,0,0,.06);
+      --shadow-md:   0 4px 20px rgba(0,94,83,.12);
+      --radius:      16px;
+      --font-en:     'Inter', sans-serif;
+      --font-ar:     'Tajawal', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-en);
+      background: var(--bg);
+      color: var(--text-body);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .lang-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--primary-900);
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.25);
+    }
+
+    .lang-btn {
+      padding: 6px 22px;
+      border-radius: 100px;
+      border: 2px solid rgba(255,255,255,.25);
+      background: transparent;
+      color: rgba(255,255,255,.7);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .25s ease;
+    }
+
+    .lang-btn.active,
+    .lang-btn:hover {
+      background: var(--primary-600);
+      border-color: var(--primary-600);
+      color: #fff;
+      box-shadow: 0 0 0 3px rgba(79,70,229,.35);
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-700) 45%, #3B6663 100%);
+      color: #fff;
+      padding: 72px 24px 56px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 70% 30%, rgba(255,255,255,.05) 0%, transparent 60%);
+    }
+
+    .header .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.2);
+      backdrop-filter: blur(8px);
+      border-radius: 100px;
+      padding: 6px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .5px;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -.5px;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .header .subtitle {
+      font-size: 15px;
+      opacity: .75;
+      position: relative;
+    }
+
+    .header .meta-chips {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 28px;
+      position: relative;
+    }
+
+    .chip {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 40px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .toc h3 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary-600);
+      margin-bottom: 16px;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .toc li { font-size: 14px; }
+
+    .toc a {
+      color: var(--text-body);
+      text-decoration: none;
+      transition: color .2s;
+    }
+
+    .toc a:hover { color: var(--primary-600); }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow .25s ease, transform .25s ease;
+      scroll-margin-top: 80px;
+    }
+
+    .section:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .section-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--primary-50);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-bottom: 18px;
+      border: 1px solid var(--primary-100);
+    }
+
+    .section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--primary-600);
+      color: #fff;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .section p {
+      color: var(--text-body);
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    .list {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text-body);
+    }
+
+    .list li::before {
+      content: '✦';
+      color: var(--primary-600);
+      font-size: 11px;
+      margin-top: 4px;
+      flex-shrink: 0;
+    }
+
+    .highlight {
+      background: var(--primary-50);
+      border: 1px solid var(--primary-200);
+      border-left: 4px solid var(--primary-600);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: var(--primary-900);
+    }
+
+    .highlight strong { color: var(--primary-700); }
+
+    .contact-card {
+      background: linear-gradient(135deg, var(--primary-600), #3B6663);
+      border-radius: var(--radius);
+      padding: 36px 40px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 32px rgba(0,94,83,.30);
+    }
+
+    .contact-card h2 { color: #fff; font-size: 22px; margin-bottom: 8px; }
+    .contact-card p { opacity: .85; margin-bottom: 20px; font-size: 15px; }
+
+    .contact-card a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 100px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background .2s;
+    }
+
+    .contact-card a:hover { background: rgba(255,255,255,.25); }
+
+    .footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      padding-bottom: 32px;
+    }
+
+    .footer .logo { font-size: 18px; font-weight: 700; color: var(--primary-600); margin-bottom: 6px; }
+
+    .ar-content {
+      display: none;
+      font-family: var(--font-ar);
+      direction: rtl;
+      text-align: right;
+    }
+
+    .ar-content .toc ol { padding-left: 0; padding-right: 20px; }
+    .ar-content .list li { flex-direction: row-reverse; }
+    .ar-content .highlight { border-left: none; border-right: 4px solid var(--primary-600); }
+    .ar-content .section h2 { flex-direction: row-reverse; }
+
+    body.lang-ar .en-content { display: none; }
+    body.lang-ar .ar-content { display: block; }
+    body.lang-ar { direction: rtl; }
+    body.lang-ar .lang-bar { direction: ltr; }
+
+    @media (max-width: 600px) {
+      .section { padding: 24px 20px; }
+      .contact-card { padding: 28px 20px; }
+      .toc { padding: 20px; }
+    }
+  </style>
+</head>
+<body class="lang-en">
+
+  <div class="lang-bar" role="navigation" aria-label="Language Switcher">
+    <button class="lang-btn active" id="btn-en" onclick="setLang('en')" aria-label="Switch to English">English</button>
+    <button class="lang-btn"        id="btn-ar" onclick="setLang('ar')" aria-label="Switch to Arabic">العربية</button>
+  </div>
+
+  <!-- ENGLISH -->
+  <div class="en-content">
+    <header class="header">
+      <div class="badge">Privacy Policy</div>
+      <h1>Clivio Privacy Policy</h1>
+      <p class="subtitle">Clinic Management Application</p>
+      <div class="meta-chips">
+        <span class="chip">Last updated: September 2025</span>
+        <span class="chip">Effective immediately</span>
+        <span class="chip">iOS &amp; Android</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="toc" aria-label="Table of Contents">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li><a href="#en-1">Introduction</a></li>
+          <li><a href="#en-2">Data We Collect</a></li>
+          <li><a href="#en-3">How We Use Your Data</a></li>
+          <li><a href="#en-4">Data Sharing &amp; Third Parties</a></li>
+          <li><a href="#en-5">Data Retention</a></li>
+          <li><a href="#en-6">Data Security</a></li>
+          <li><a href="#en-7">Your Rights</a></li>
+          <li><a href="#en-8">Children's Privacy</a></li>
+          <li><a href="#en-9">Changes to This Policy</a></li>
+          <li><a href="#en-10">Contact Us</a></li>
+        </ol>
+      </nav>
+
+      <section class="section" id="en-1">
+        <div class="section-icon">📄</div>
+        <h2><span class="num">1</span> Introduction</h2>
+        <p>Welcome to <strong>Clivio</strong>, a clinic management application developed to help healthcare providers manage appointments, patients, staff, and payments efficiently.</p>
+        <p>This Privacy Policy explains how <strong>Clivio</strong> ("we", "us", or "our") collects, uses, stores, and protects your personal information when you use our mobile application ("the App").</p>
+        <div class="highlight"><strong>Important:</strong> By using Clivio, you agree to the practices described in this Privacy Policy. If you do not agree, please discontinue use of the App.</div>
+        <p>This policy complies with applicable data protection laws including GDPR principles, Apple App Store guidelines, and Google Play Store requirements.</p>
+      </section>
+
+      <section class="section" id="en-2">
+        <div class="section-icon">🗂️</div>
+        <h2><span class="num">2</span> Data We Collect</h2>
+        <p>We collect the following categories of personal data:</p>
+        <p><strong>Doctor / Staff Account Data</strong></p>
+        <ul class="list">
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Password (stored in hashed/encrypted form — never in plain text)</li>
+          <li>Professional role (e.g., doctor, receptionist)</li>
+        </ul>
+        <p><strong>Patient Data</strong></p>
+        <ul class="list">
+          <li>Patient full name</li>
+          <li>Phone number</li>
+          <li>Age and gender</li>
+          <li>Appointment history and scheduling details</li>
+        </ul>
+        <p><strong>Payment &amp; Financial Data</strong></p>
+        <ul class="list">
+          <li>Payment transaction records linked to patient accounts</li>
+          <li>Invoice and billing amounts</li>
+          <li>Payment status (paid, pending, partial)</li>
+        </ul>
+        <p><strong>Technical / Device Data</strong></p>
+        <ul class="list">
+          <li>Device type and operating system version</li>
+          <li>App version and crash logs (for debugging purposes)</li>
+          <li>Usage analytics (anonymous, aggregated)</li>
+        </ul>
+        <div class="highlight"><strong>We do NOT collect:</strong> Sensitive medical history or clinical diagnoses. We do not store prescription data or health records.</div>
+      </section>
+
+      <section class="section" id="en-3">
+        <div class="section-icon">⚙️</div>
+        <h2><span class="num">3</span> How We Use Your Data</h2>
+        <p>We use the data we collect solely for legitimate business purposes:</p>
+        <ul class="list">
+          <li>To provide and operate the clinic management features of the App</li>
+          <li>To manage appointments, patient records, and staff accounts</li>
+          <li>To process and record payment transactions</li>
+          <li>To authenticate users and maintain account security</li>
+          <li>To send important service notifications (e.g., appointment reminders)</li>
+          <li>To diagnose technical issues and improve App performance</li>
+          <li>To comply with legal obligations</li>
+        </ul>
+        <div class="highlight">We <strong>do not</strong> use your data for advertising, marketing profiling, or sell your data to any third party.</div>
+      </section>
+
+      <section class="section" id="en-4">
+        <div class="section-icon">🤝</div>
+        <h2><span class="num">4</span> Data Sharing &amp; Third Parties</h2>
+        <p>We do not sell or rent your personal data. We may share data only in the following limited circumstances:</p>
+        <ul class="list">
+          <li><strong>Cloud Hosting Providers:</strong> Our servers are hosted securely on trusted cloud providers (e.g., Firebase/AWS). These providers process data only on our behalf under strict data processing agreements.</li>
+          <li><strong>Legal Requirements:</strong> We may disclose your data if required by applicable law, court order, or governmental authority.</li>
+          <li><strong>Business Transfer:</strong> In the event of a merger or acquisition, user data may be transferred as part of that transaction with equivalent privacy protections maintained.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-5">
+        <div class="section-icon">📦</div>
+        <h2><span class="num">5</span> Data Retention</h2>
+        <p>We retain personal data for as long as necessary to provide our services and comply with legal obligations:</p>
+        <ul class="list">
+          <li><strong>Account data</strong> is retained while the account is active and for 30 days after deletion to allow recovery.</li>
+          <li><strong>Patient records and payment data</strong> are retained for the duration of the subscription and deleted upon written request or account termination.</li>
+          <li><strong>Anonymized analytics data</strong> may be retained indefinitely for service improvement.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="en-6">
+        <div class="section-icon">🔐</div>
+        <h2><span class="num">6</span> Data Security</h2>
+        <p>We implement industry-standard security protections:</p>
+        <ul class="list">
+          <li>All data is transmitted over encrypted HTTPS/TLS connections</li>
+          <li>Passwords are stored using strong one-way hashing (bcrypt or equivalent)</li>
+          <li>Access to production data is restricted to authorized personnel only</li>
+          <li>Regular security reviews and vulnerability assessments are conducted</li>
+        </ul>
+        <div class="highlight">While we implement strong security measures, no system is 100% secure. In the event of a data breach that affects your rights, we will notify you in accordance with applicable law.</div>
+      </section>
+
+      <section class="section" id="en-7">
+        <div class="section-icon">⚖️</div>
+        <h2><span class="num">7</span> Your Rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <ul class="list">
+          <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+          <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data</li>
+          <li><strong>Deletion:</strong> Request deletion of your account and associated data</li>
+          <li><strong>Portability:</strong> Request a machine-readable export of your data</li>
+          <li><strong>Objection:</strong> Object to specific uses of your data</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us via the details in Section 10. We will respond within 30 days.</p>
+      </section>
+
+      <section class="section" id="en-8">
+        <div class="section-icon">👶</div>
+        <h2><span class="num">8</span> Children's Privacy</h2>
+        <p>Clivio is designed exclusively for healthcare professionals and clinic operators. It is <strong>not intended for use by individuals under the age of 18</strong>. We do not knowingly collect personal data from children.</p>
+        <p>If you believe a minor has registered, please contact us immediately so we can remove the data.</p>
+      </section>
+
+      <section class="section" id="en-9">
+        <div class="section-icon">🔄</div>
+        <h2><span class="num">9</span> Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we make significant changes, we will:</p>
+        <ul class="list">
+          <li>Update the "Last Updated" date at the top of this page</li>
+          <li>Notify users through the App or via email</li>
+        </ul>
+        <p>Continued use of the App after any changes indicates your acceptance of the revised policy.</p>
+      </section>
+
+      <div class="contact-card" id="en-10">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or your data, please reach out to us.</p>
+        <a href="https://wa.me/201042438799" target="_blank" rel="noopener">Contact via WhatsApp</a>
+      </div>
+
+      <footer class="footer">
+        <div class="logo">Clivio</div>
+        <p>2025 Clivio. All rights reserved.</p>
+        <p style="margin-top:6px;">Clinic Management Application · iOS &amp; Android</p>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ARABIC -->
+  <div class="ar-content">
+    <header class="header" style="font-family:'Tajawal',sans-serif;">
+      <div class="badge">سياسة الخصوصية</div>
+      <h1>سياسة الخصوصية – كليفيو</h1>
+      <p class="subtitle">تطبيق إدارة العيادات</p>
+      <div class="meta-chips">
+        <span class="chip">آخر تحديث: سبتمبر 2025</span>
+        <span class="chip">سارية فور النشر</span>
+        <span class="chip">iOS و Android</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="toc" aria-label="فهرس المحتويات">
+        <h3>فهرس المحتويات</h3>
+        <ol>
+          <li><a href="#ar-1">المقدمة</a></li>
+          <li><a href="#ar-2">البيانات التي نجمعها</a></li>
+          <li><a href="#ar-3">كيف نستخدم بياناتك</a></li>
+          <li><a href="#ar-4">مشاركة البيانات مع الأطراف الثالثة</a></li>
+          <li><a href="#ar-5">الاحتفاظ بالبيانات</a></li>
+          <li><a href="#ar-6">أمان البيانات</a></li>
+          <li><a href="#ar-7">حقوقك</a></li>
+          <li><a href="#ar-8">خصوصية الأطفال</a></li>
+          <li><a href="#ar-9">التغييرات على هذه السياسة</a></li>
+          <li><a href="#ar-10">تواصل معنا</a></li>
+        </ol>
+      </nav>
+
+      <section class="section" id="ar-1">
+        <div class="section-icon">📄</div>
+        <h2><span class="num">١</span> المقدمة</h2>
+        <p>مرحبًا بك في <strong>كليفيو</strong>، تطبيق إدارة العيادات المصمَّم لمساعدة مقدمي الرعاية الصحية على إدارة المواعيد والمرضى والموظفين والمدفوعات بكفاءة.</p>
+        <p>تُوضِّح سياسة الخصوصية هذه كيف تقوم <strong>كليفيو</strong> ("نحن") بجمع بياناتك الشخصية واستخدامها وتخزينها وحمايتها عند استخدامك تطبيقنا.</p>
+        <div class="highlight"><strong>تنبيه:</strong> باستخدامك تطبيق كليفيو، فإنك توافق على الممارسات الموضحة في سياسة الخصوصية هذه. إن لم توافق، يُرجى التوقف عن استخدام التطبيق.</div>
+        <p>تتوافق هذه السياسة مع قوانين حماية البيانات المعمول بها، بما في ذلك مبادئ اللائحة الأوروبية GDPR، وإرشادات متجر Apple، ومتطلبات متجر Google Play.</p>
+      </section>
+
+      <section class="section" id="ar-2">
+        <div class="section-icon">🗂️</div>
+        <h2><span class="num">٢</span> البيانات التي نجمعها</h2>
+        <p>نقوم بجمع الفئات التالية من البيانات الشخصية:</p>
+        <p><strong>بيانات حساب الطبيب / الموظف</strong></p>
+        <ul class="list">
+          <li>الاسم الكامل</li>
+          <li>عنوان البريد الإلكتروني</li>
+          <li>كلمة المرور (مُخزَّنة بشكل مُشفَّر — لا تُحفَظ بنص واضح أبدًا)</li>
+          <li>الدور الوظيفي (مثل: طبيب، موظف استقبال)</li>
+        </ul>
+        <p><strong>بيانات المريض</strong></p>
+        <ul class="list">
+          <li>الاسم الكامل للمريض</li>
+          <li>رقم الهاتف</li>
+          <li>العمر والجنس</li>
+          <li>سجل المواعيد وتفاصيل الجدولة</li>
+        </ul>
+        <p><strong>بيانات الدفع والمالية</strong></p>
+        <ul class="list">
+          <li>سجلات المعاملات المالية المرتبطة بحسابات المرضى</li>
+          <li>الفواتير ومبالغ الفوترة</li>
+          <li>حالة الدفع (مدفوع، معلق، جزئي)</li>
+        </ul>
+        <p><strong>البيانات التقنية / بيانات الجهاز</strong></p>
+        <ul class="list">
+          <li>نوع الجهاز وإصدار نظام التشغيل</li>
+          <li>إصدار التطبيق وسجلات الأعطال (لأغراض تصحيح الأخطاء)</li>
+          <li>تحليلات الاستخدام (مجهولة الهوية ومجمَّعة)</li>
+        </ul>
+        <div class="highlight"><strong>نحن لا نجمع:</strong> السجلات الطبية الحساسة أو التشخيصات السريرية. لا نحتفظ ببيانات الوصفات الطبية أو الملفات الصحية.</div>
+      </section>
+
+      <section class="section" id="ar-3">
+        <div class="section-icon">⚙️</div>
+        <h2><span class="num">٣</span> كيف نستخدم بياناتك</h2>
+        <p>نستخدم البيانات التي نجمعها لأغراض تجارية مشروعة فقط:</p>
+        <ul class="list">
+          <li>توفير ميزات إدارة العيادة وتشغيلها</li>
+          <li>إدارة المواعيد وسجلات المرضى وحسابات الموظفين</li>
+          <li>معالجة معاملات الدفع وتسجيلها</li>
+          <li>مصادقة المستخدمين والحفاظ على أمان الحساب</li>
+          <li>إرسال إشعارات الخدمة الهامة (مثل تذكيرات المواعيد)</li>
+          <li>تشخيص المشكلات التقنية وتحسين أداء التطبيق</li>
+          <li>الامتثال للالتزامات القانونية</li>
+        </ul>
+        <div class="highlight">نحن <strong>لا نستخدم</strong> بياناتك للإعلانات أو بناء الملفات التسويقية، ولا نبيع بياناتك لأي طرف ثالث.</div>
+      </section>
+
+      <section class="section" id="ar-4">
+        <div class="section-icon">🤝</div>
+        <h2><span class="num">٤</span> مشاركة البيانات مع الأطراف الثالثة</h2>
+        <p>لا نبيع بياناتك الشخصية أو نؤجرها. قد نشارك البيانات في الحالات المحدودة التالية فقط:</p>
+        <ul class="list">
+          <li><strong>مزودو الاستضافة السحابية:</strong> خوادمنا مستضافة بشكل آمن لدى مزودين موثوقين (مثل Firebase/AWS). يعالج هؤلاء المزودون البيانات نيابةً عنا وبموجب اتفاقيات معالجة بيانات صارمة.</li>
+          <li><strong>المتطلبات القانونية:</strong> قد نكشف عن بياناتك إذا اقتضى ذلك القانون المعمول به أو أمر قضائي أو سلطة حكومية.</li>
+          <li><strong>نقل الأعمال:</strong> في حالة الاندماج أو الاستحواذ، قد تُنقل بيانات المستخدمين كجزء من تلك المعاملة مع الحفاظ على ضمانات الخصوصية ذاتها.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="ar-5">
+        <div class="section-icon">📦</div>
+        <h2><span class="num">٥</span> الاحتفاظ بالبيانات</h2>
+        <p>نحتفظ بالبيانات الشخصية طالما كان ذلك ضروريًا لتقديم خدماتنا والامتثال للالتزامات القانونية:</p>
+        <ul class="list">
+          <li>يُحتفَظ ببيانات الحساب طالما الحساب نشطًا ولمدة 30 يومًا بعد الحذف للسماح بالاسترداد.</li>
+          <li>يُحتفَظ بسجلات المرضى وبيانات الدفع طوال فترة الاشتراك، وتُحذف عند الطلب الكتابي أو إنهاء الحساب.</li>
+          <li>قد يُحتفَظ ببيانات التحليلات المجهولة الهوية إلى أجل غير مسمى لتحسين الخدمة.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="ar-6">
+        <div class="section-icon">🔐</div>
+        <h2><span class="num">٦</span> أمان البيانات</h2>
+        <p>نطبق أعلى معايير الحماية في الصناعة:</p>
+        <ul class="list">
+          <li>تُنقَل جميع البيانات عبر اتصالات HTTPS/TLS مُشفَّرة</li>
+          <li>تُخزَّن كلمات المرور باستخدام تشفير قوي أحادي الاتجاه (bcrypt أو ما يعادله)</li>
+          <li>الوصول إلى بيانات الإنتاج مقتصر على الموظفين المخوَّلين فقط</li>
+          <li>تُجرى مراجعات أمنية دورية وتقييمات للثغرات الأمنية</li>
+        </ul>
+        <div class="highlight">على الرغم من تطبيقنا لإجراءات أمنية قوية، لا يوجد نظام آمن بنسبة 100%. في حالة حدوث أي اختراق للبيانات يؤثر على حقوقك، سنقوم بإخطارك وفقًا للقانون المعمول به.</div>
+      </section>
+
+      <section class="section" id="ar-7">
+        <div class="section-icon">⚖️</div>
+        <h2><span class="num">٧</span> حقوقك</h2>
+        <p>بناءً على موقعك الجغرافي، قد تتمتع بالحقوق التالية فيما يتعلق ببياناتك الشخصية:</p>
+        <ul class="list">
+          <li><strong>الوصول:</strong> طلب نسخة من البيانات الشخصية التي نحتفظ بها عنك</li>
+          <li><strong>التصحيح:</strong> طلب تصحيح البيانات غير الدقيقة أو غير المكتملة</li>
+          <li><strong>الحذف:</strong> طلب حذف حسابك والبيانات المرتبطة به</li>
+          <li><strong>قابلية النقل:</strong> طلب تصدير بياناتك بصيغة قابلة للقراءة آليًا</li>
+          <li><strong>الاعتراض:</strong> الاعتراض على استخدامات محددة لبياناتك</li>
+        </ul>
+        <p>لممارسة أي من هذه الحقوق، يُرجى التواصل معنا عبر التفاصيل الواردة في القسم العاشر. سنرد خلال 30 يومًا.</p>
+      </section>
+
+      <section class="section" id="ar-8">
+        <div class="section-icon">👶</div>
+        <h2><span class="num">٨</span> خصوصية الأطفال</h2>
+        <p>تطبيق كليفيو مُصمَّم حصريًا لمتخصصي الرعاية الصحية ومشغلي العيادات. إنه <strong>غير مخصص للأفراد دون سن 18 عامًا</strong>. لا نجمع بيانات شخصية من الأطفال عن علم.</p>
+        <p>إذا كنت تعتقد أن قاصرًا قد قام بالتسجيل، يُرجى التواصل معنا فورًا حتى نتمكن من حذف البيانات.</p>
+      </section>
+
+      <section class="section" id="ar-9">
+        <div class="section-icon">🔄</div>
+        <h2><span class="num">٩</span> التغييرات على هذه السياسة</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر. عند إجراء تغييرات جوهرية، سنقوم بـ:</p>
+        <ul class="list">
+          <li>تحديث تاريخ "آخر تحديث" في أعلى هذه الصفحة</li>
+          <li>إخطار المستخدمين عبر التطبيق أو البريد الإلكتروني</li>
+        </ul>
+        <p>استمرار استخدامك للتطبيق بعد أي تغييرات يُعدّ قبولًا منك للسياسة المُعدَّلة.</p>
+      </section>
+
+      <div class="contact-card" id="ar-10" style="font-family:'Tajawal',sans-serif; direction:rtl;">
+        <h2>تواصل معنا</h2>
+        <p>إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه أو بياناتك، يُرجى التواصل معنا.</p>
+        <a href="https://wa.me/201042438799" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+      </div>
+
+      <footer class="footer" style="font-family:'Tajawal',sans-serif; direction:rtl;">
+        <div class="logo">كليفيو</div>
+        <p>2025 Clivio. جميع الحقوق محفوظة.</p>
+        <p style="margin-top:6px;">تطبيق إدارة العيادات · iOS و Android</p>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.body.className = 'lang-' + lang;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-ar').classList.toggle('active', lang === 'ar');
+      try { localStorage.setItem('clivio_lang', lang); } catch(e) {}
+    }
+    (function() {
+      try { var s = localStorage.getItem('clivio_lang'); if (s === 'ar') setLang('ar'); } catch(e) {}
+    })();
+  </script>
+</body>
+</html>

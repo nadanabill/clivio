@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nadanabill.github.io/clivio/sitemap.xml
