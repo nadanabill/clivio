@@ -1,0 +1,4 @@
+
+# binaries go to GitHub Releases, not the repo
+*.exe
+*.apk
